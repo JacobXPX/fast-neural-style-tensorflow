@@ -47,7 +47,7 @@ pip install opencv-python
 ```
 and run:
 ```
-python eval-cv2.py --model_file <your path to wave.ckpt-done> --image_size 256 --port <your camera port>
+python eval-cv2.py --model_file <your path to wave.ckpt-done> --image_size 256 --port <your camera port number default:0>
 ```
 
 ## Train a Model:
