@@ -39,6 +39,17 @@ python eval.py --model_file <your path to wave.ckpt-done> --image_file img/test.
 
 Then check out generated/res.jpg.
 
+To generate a real-time video from camera,
+
+make sure you installed opencv:
+```
+pip install opencv-python
+```
+and run:
+```
+python eval-cv2.py --model_file <your path to wave.ckpt-done> --image_size 256 --port <your camera port>
+```
+
 ## Train a Model:
 To train a model from scratch, you should first download [VGG16 model](http://download.tensorflow.org/models/vgg_16_2016_08_28.tar.gz) from Tensorflow Slim. Extract the file vgg_16.ckpt. Then copy it to the folder pretrained/ :
 ```
